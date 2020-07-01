@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScopeUrlField ScopeUrlField renders correctly with scopeurl 1`] = `
+<WithStyles(ForwardRef(Typography))
+  className="makeStyles-linkTypography-3"
+>
+  <WithStyles(ForwardRef(Link))
+    className="makeStyles-linkAnchor-4"
+    href="https://www.{cdiscount_env}.com/{path_var}?{query_param=}"
+    onClick={[Function]}
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    https://www.{cdiscount_env}.com/{path_var}?{query_param=}
+  </WithStyles(ForwardRef(Link))>
+</WithStyles(ForwardRef(Typography))>
+`;
+
+exports[`ScopeUrlField ScopeUrlField renders correctly without props 1`] = `
+<WithStyles(ForwardRef(Typography))
+  className="makeStyles-linkTypography-1"
+>
+  <WithStyles(ForwardRef(Link))
+    className="makeStyles-linkAnchor-2"
+    href={null}
+    onClick={[Function]}
+    rel="noopener noreferrer"
+    target="_blank"
+  />
+</WithStyles(ForwardRef(Typography))>
+`;

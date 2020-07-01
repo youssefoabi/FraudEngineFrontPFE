@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScopeDataEdit renders correctly 1`] = `
+<h
+  fullheight={false}
+  title="Caractéristiques de la gamme"
+>
+  <f
+    config={null}
+    fields={
+      Array [
+        Object {
+          "columns": 4,
+          "id": "name",
+          "label": "Nom de la gamme",
+          "type": "input",
+        },
+        Object {
+          "columns": 12,
+          "id": "urlTemplate",
+          "label": "Url avec paramètres",
+          "type": "input",
+        },
+      ]
+    }
+    inputs={null}
+    onChange={[Function]}
+    onInit={[Function]}
+    title={null}
+    values={null}
+  />
+</h>
+`;

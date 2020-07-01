@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeNavigation renders correctly 1`] = `
+<WithStyles(ForwardRef(Grid))
+  alignItems="center"
+  className="makeStyles-homeNavigationGrid-2"
+  container={true}
+  direction="row"
+  justify="space-around"
+>
+  <WithStyles(ForwardRef(Button))
+    className="makeStyles-homeNavigationButton-1"
+    href="/engines"
+    startIcon={
+      <UNDEFINED
+        style={
+          Object {
+            "fontSize": 60,
+          }
+        }
+      />
+    }
+  >
+    <WithStyles(ForwardRef(Typography))
+      style={
+        Object {
+          "fontSize": 15,
+        }
+      }
+    >
+      Moteurs de recherche
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Button))>
+  <WithStyles(ForwardRef(Button))
+    className="makeStyles-homeNavigationButton-1"
+    href="/engines-groups"
+    startIcon={
+      <UNDEFINED
+        style={
+          Object {
+            "fontSize": 60,
+          }
+        }
+      />
+    }
+  >
+    <WithStyles(ForwardRef(Typography))
+      style={
+        Object {
+          "fontSize": 15,
+        }
+      }
+    >
+      Groupe de moteurs de recherche
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Button))>
+  <WithStyles(ForwardRef(Button))
+    className="makeStyles-homeNavigationButton-1"
+    href="/scopes"
+    startIcon={
+      <UNDEFINED
+        style={
+          Object {
+            "fontSize": 60,
+          }
+        }
+      />
+    }
+  >
+    <WithStyles(ForwardRef(Typography))
+      style={
+        Object {
+          "fontSize": 15,
+        }
+      }
+    >
+      Référentiel des gammes
+    </WithStyles(ForwardRef(Typography))>
+  </WithStyles(ForwardRef(Button))>
+</WithStyles(ForwardRef(Grid))>
+`;

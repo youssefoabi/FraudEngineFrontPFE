@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScopesList ScopesList renders correctly with null scopes 1`] = `""`;
+
+exports[`ScopesList ScopesList renders correctly with scopes 1`] = `
+<DraggableList
+  data={
+    Array [
+      Object {
+        "isEnable": true,
+        "name": "scope 1",
+        "order": 0,
+        "scopeId": 1,
+      },
+      Object {
+        "isEnable": true,
+        "name": "scope 2",
+        "order": 0,
+        "scopeId": 2,
+      },
+    ]
+  }
+  droppableId="scopes"
+  keyExtractor={[Function]}
+  onOrderChange={[Function]}
+  renderItem={[Function]}
+/>
+`;

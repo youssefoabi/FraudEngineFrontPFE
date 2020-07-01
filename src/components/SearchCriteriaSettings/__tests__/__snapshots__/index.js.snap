@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchCriteriaSettings SearchCriteriaSettings defaultProp functions runs defaultProps.handleChange() 1`] = `undefined`;
+
+exports[`SearchCriteriaSettings SearchCriteriaSettings renders correctly with empty scopes 1`] = `""`;
+
+exports[`SearchCriteriaSettings SearchCriteriaSettings renders correctly with null scopes 1`] = `""`;
+
+exports[`SearchCriteriaSettings SearchCriteriaSettings renders correctly with scopes & props 1`] = `
+<p
+  defaultExpanded={false}
+  title="Gestion des critères de recherches"
+>
+  <WithStyles(ForwardRef(Grid))
+    container={true}
+    direction="column"
+  >
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      spacing={2}
+    >
+      <h
+        fullheight={false}
+        item={true}
+        md={6}
+        sm={12}
+        title={null}
+        xl={6}
+        xs={12}
+      >
+        <FieldsBlock
+          engine={
+            Object {
+              "currentScope": Object {
+                "scopeId": 1,
+              },
+              "inputFields": Object {
+                "0": Object {
+                  "type": "Address",
+                },
+                "1": Object {
+                  "type": "Numeric",
+                },
+              },
+            }
+          }
+          fieldId={0}
+          handleChange={[Function]}
+        />
+      </h>
+      <h
+        fullheight={false}
+        item={true}
+        md={6}
+        sm={12}
+        title={null}
+        xl={6}
+        xs={12}
+      >
+        <FieldsBlock
+          engine={
+            Object {
+              "currentScope": Object {
+                "scopeId": 1,
+              },
+              "inputFields": Object {
+                "0": Object {
+                  "type": "Address",
+                },
+                "1": Object {
+                  "type": "Numeric",
+                },
+              },
+            }
+          }
+          fieldId={1}
+          handleChange={[Function]}
+        />
+      </h>
+    </WithStyles(ForwardRef(Grid))>
+    <br />
+    <ScopesBlock
+      engine={
+        Object {
+          "currentScope": Object {
+            "scopeId": 1,
+          },
+          "inputFields": Object {
+            "0": Object {
+              "type": "Address",
+            },
+            "1": Object {
+              "type": "Numeric",
+            },
+          },
+        }
+      }
+      handleChange={[Function]}
+    />
+    <UrlBlock
+      engine={
+        Object {
+          "currentScope": Object {
+            "scopeId": 1,
+          },
+          "inputFields": Object {
+            "0": Object {
+              "type": "Address",
+            },
+            "1": Object {
+              "type": "Numeric",
+            },
+          },
+        }
+      }
+      handleChange={[Function]}
+    />
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      spacing={2}
+    >
+      <h
+        fullheight={false}
+        item={true}
+        md={6}
+        sm={12}
+        title={null}
+        xl={6}
+        xs={12}
+      >
+        <ParametersBlock
+          engine={
+            Object {
+              "currentScope": Object {
+                "scopeId": 1,
+              },
+              "inputFields": Object {
+                "0": Object {
+                  "type": "Address",
+                },
+                "1": Object {
+                  "type": "Numeric",
+                },
+              },
+            }
+          }
+          fieldId={0}
+          handleChange={[Function]}
+        />
+      </h>
+      <h
+        fullheight={false}
+        item={true}
+        md={6}
+        sm={12}
+        title={null}
+        xl={6}
+        xs={12}
+      >
+        <ParametersBlock
+          engine={
+            Object {
+              "currentScope": Object {
+                "scopeId": 1,
+              },
+              "inputFields": Object {
+                "0": Object {
+                  "type": "Address",
+                },
+                "1": Object {
+                  "type": "Numeric",
+                },
+              },
+            }
+          }
+          fieldId={1}
+          handleChange={[Function]}
+        />
+      </h>
+    </WithStyles(ForwardRef(Grid))>
+  </WithStyles(ForwardRef(Grid))>
+</p>
+`;
+
+exports[`SearchCriteriaSettings SearchCriteriaSettings renders correctly without props 1`] = `""`;

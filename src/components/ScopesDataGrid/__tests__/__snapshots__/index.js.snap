@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataGrid DataGrid renders correctly without props 1`] = `
+<S
+  actions={Array []}
+  align="center"
+  bodyActions={
+    Array [
+      Object {
+        "icon": Object {
+          "$$typeof": Symbol(react.memo),
+          "compare": null,
+          "displayName": "EditIcon",
+          "muiName": "SvgIcon",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          },
+        },
+        "label": "Modifier",
+        "onClick": [Function],
+      },
+    ]
+  }
+  bottomPagination={false}
+  checkbox={true}
+  columns={null}
+  isLoading={false}
+  labelDisplayedRows={null}
+  labelRowsPerPage={null}
+  onChangePage={[Function]}
+  onChangeRowsPerPage={[Function]}
+  onRequestSort={[Function]}
+  onSelect={[Function]}
+  onSelectAll={[Function]}
+  order="asc"
+  orderBy={null}
+  page={2}
+  placeholderLabel="No records. 🕳️"
+  rowCount={0}
+  rows={Array []}
+  rowsPerPage={10}
+  rowsPerPageOptions={
+    Array [
+      10,
+      15,
+      20,
+    ]
+  }
+  selected={Array []}
+  square={false}
+/>
+`;

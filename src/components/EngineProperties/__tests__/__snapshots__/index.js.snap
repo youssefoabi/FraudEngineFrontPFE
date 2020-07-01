@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EngineProperties EngineProperties renders correctly with props and engineName 1`] = `
+<h
+  fullheight={false}
+  title="Propriétés de l'onglet du moteur engine name"
+>
+  <f
+    config={null}
+    fields={
+      Array [
+        Object {
+          "columns": 4,
+          "id": "engineName",
+          "label": "Libellé de l'onglet",
+          "type": "input",
+        },
+        Object {
+          "columns": 4,
+          "id": "pictogramUrl",
+          "label": "Url du picto",
+          "type": "input",
+        },
+        Object {
+          "columns": 2,
+          "id": "pictogramUrl",
+          "imageSize": "40x35",
+          "label": "Aperçu picto",
+          "type": "imageUrlWithPreview",
+        },
+        Object {
+          "columns": 2,
+          "id": "isEnable",
+          "label": "Onglet actif",
+          "type": "switch",
+        },
+      ]
+    }
+    inputs={null}
+    onChange={[Function]}
+    onInit={[Function]}
+    title={null}
+    values={null}
+  />
+</h>
+`;
+
+exports[`EngineProperties EngineProperties renders correctly with props and without engineName 1`] = `
+<h
+  fullheight={false}
+  title="Propriétés de l'onglet du moteur "
+>
+  <f
+    config={null}
+    fields={
+      Array [
+        Object {
+          "columns": 4,
+          "id": "engineName",
+          "label": "Libellé de l'onglet",
+          "type": "input",
+        },
+        Object {
+          "columns": 4,
+          "id": "pictogramUrl",
+          "label": "Url du picto",
+          "type": "input",
+        },
+        Object {
+          "columns": 2,
+          "id": "pictogramUrl",
+          "imageSize": "40x35",
+          "label": "Aperçu picto",
+          "type": "imageUrlWithPreview",
+        },
+        Object {
+          "columns": 2,
+          "id": "isEnable",
+          "label": "Onglet actif",
+          "type": "switch",
+        },
+      ]
+    }
+    inputs={null}
+    onChange={[Function]}
+    onInit={[Function]}
+    title={null}
+    values={null}
+  />
+</h>
+`;
+
+exports[`EngineProperties EngineProperties renders correctly without props 1`] = `""`;

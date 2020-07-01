@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EnginesGroupCreation renders correctly 1`] = `
+<EnginesGroupScreen
+  action={[Function]}
+  enginesGroup={
+    Object {
+      "isEnable": false,
+    }
+  }
+  setEnginesGroup={[Function]}
+  title="Création"
+/>
+`;

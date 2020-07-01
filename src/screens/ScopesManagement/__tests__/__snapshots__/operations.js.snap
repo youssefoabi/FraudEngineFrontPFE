@@ -1,0 +1,310 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScopesManagement operations parseResult with good result returns correct result 1`] = `
+Array [
+  Object {
+    "id": 1,
+    "modifiedAt": 1586524639323,
+    "name": "scope 1",
+    "urlTemplate": "baseUrlscope1.com",
+  },
+  Object {
+    "id": 2,
+    "modifiedAt": 1586611039323,
+    "name": "scope 2",
+    "urlTemplate": "baseUrlscope2.com",
+  },
+  Object {
+    "id": 3,
+    "modifiedAt": 1586438239323,
+    "name": "scope 3",
+    "urlTemplate": "baseUrlscope3.com",
+  },
+]
+`;
+
+exports[`ScopesManagement operations parseResult with wrong result returns correct result 1`] = `Array []`;
+
+exports[`ScopesManagement operations parseResult without result returns correct result 1`] = `Array []`;
+
+exports[`ScopesManagement operations saga deleteScope with failure 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": Object {
+        "args": Array [
+          1,
+        ],
+        "context": null,
+        "fn": [Function],
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "SELECT": Object {
+        "args": Array [],
+        "selector": [Function],
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "error": Object {
+            "errorMessage": "Echec de suppression de la gamme null",
+          },
+          "type": "@SCOPES/DELETE_SCOPES_FAILURE",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": false,
+  },
+]
+`;
+
+exports[`ScopesManagement operations saga deleteScope with success 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": Object {
+        "args": Array [
+          1,
+        ],
+        "context": null,
+        "fn": [Function],
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": true,
+  },
+]
+`;
+
+exports[`ScopesManagement operations saga deleteScopes with failure 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "SELECT": Object {
+        "args": Array [],
+        "selector": [Function],
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "ALL": Array [
+        GeneratorFunctionPrototype {
+          "_invoke": [Function],
+        },
+        GeneratorFunctionPrototype {
+          "_invoke": [Function],
+        },
+      ],
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "RESET_PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": Object {
+        "args": Array [],
+        "context": null,
+        "fn": [Function],
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": undefined,
+  },
+]
+`;
+
+exports[`ScopesManagement operations saga deleteScopes with success 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "SELECT": Object {
+        "args": Array [],
+        "selector": [Function],
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "ALL": Array [
+        GeneratorFunctionPrototype {
+          "_invoke": [Function],
+        },
+        GeneratorFunctionPrototype {
+          "_invoke": [Function],
+        },
+      ],
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "@SCOPES/DELETE_SCOPES_SUCCESS",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "RESET_PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": Object {
+        "args": Array [],
+        "context": null,
+        "fn": [Function],
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": undefined,
+  },
+]
+`;
+
+exports[`ScopesManagement operations saga fetchScopes 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": Object {
+        "args": Array [],
+        "context": null,
+        "fn": [Function],
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "payload": Array [
+            Object {
+              "id": 1,
+              "modifiedAt": 1586524639323,
+              "name": "scope 1",
+              "urlTemplate": "baseUrlscope1.com",
+            },
+            Object {
+              "id": 2,
+              "modifiedAt": 1586611039323,
+              "name": "scope 2",
+              "urlTemplate": "baseUrlscope2.com",
+            },
+            Object {
+              "id": 3,
+              "modifiedAt": 1586438239323,
+              "name": "scope 3",
+              "urlTemplate": "baseUrlscope3.com",
+            },
+          ],
+          "type": "@SCOPES/SET",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "payload": Array [],
+          "type": "@SCOPES/SET_SELECTED",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": undefined,
+  },
+]
+`;

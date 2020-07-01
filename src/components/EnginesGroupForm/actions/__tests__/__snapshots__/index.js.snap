@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EnginesGroup Form actions CREATE_ENGINESGROUP_ERROR 1`] = `"CREATE_ENGINESGROUP_ERROR"`;
+
+exports[`EnginesGroup Form actions CREATE_ENGINESGROUP_REQUEST 1`] = `"CREATE_ENGINESGROUP_REQUEST"`;
+
+exports[`EnginesGroup Form actions CREATE_ENGINESGROUP_SUCCESS 1`] = `"CREATE_ENGINESGROUP_SUCCESS"`;
+
+exports[`EnginesGroup Form actions EDIT_ENGINESGROUP_ERROR 1`] = `"EDIT_ENGINESGROUP_ERROR"`;
+
+exports[`EnginesGroup Form actions EDIT_ENGINESGROUP_REQUEST 1`] = `"EDIT_ENGINESGROUP_REQUEST"`;
+
+exports[`EnginesGroup Form actions EDIT_ENGINESGROUP_SUCCESS 1`] = `"EDIT_ENGINESGROUP_SUCCESS"`;
+
+exports[`EnginesGroup Form actions RESET_ENGINESGROUP_SAVE_ERROR 1`] = `"RESET_ENGINESGROUP_SAVE_ERROR"`;
+
+exports[`EnginesGroup Form actions RESET_ENGINESGROUP_SAVE_SUCCESS 1`] = `"RESET_ENGINESGROUP_SAVE_SUCCESS"`;

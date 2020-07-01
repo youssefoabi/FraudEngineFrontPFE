@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EnginesGroupEdition EnginesGroupEdition renders correctly without props 1`] = `
+<EnginesGroupScreen
+  action={[Function]}
+  enginesGroup={Object {}}
+  setEnginesGroup={[Function]}
+  title="édition"
+/>
+`;

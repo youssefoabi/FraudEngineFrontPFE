@@ -1,0 +1,220 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScopesManagement with errorMessage renders correctly 1`] = `
+<o
+  bottombar={
+    <p
+      backToTopLabel="Haut de page"
+    />
+  }
+  titlebar={
+    <withRouter(TitleBar)
+      actions={
+        Array [
+          Object {
+            "href": "/scopes/create",
+            "icon": Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "displayName": "AddIcon",
+              "muiName": "SvgIcon",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+            },
+            "id": "new_scope_button",
+            "label": "Créer une nouvelle gamme",
+            "size": "large",
+          },
+        ]
+      }
+      title="Gestion des gammes"
+    />
+  }
+>
+  <DataGrid
+    actions={
+      Array [
+        Object {
+          "color": "quaternary",
+          "disabled": true,
+          "icon": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "displayName": "DeleteIcon",
+            "muiName": "SvgIcon",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+          },
+          "label": "Supprimer les gammes sélectionnées",
+          "onClick": [Function],
+        },
+      ]
+    }
+    rowCount={0}
+    rows={Array []}
+  />
+  <DeleteScopesConfirmationModal
+    open={false}
+    toggle={[Function]}
+  />
+  <WithStyles(ForwardRef(Snackbar))
+    autoHideDuration={6000}
+    onClose={[Function]}
+    open={true}
+  >
+    <WithStyles(ForwardRef(Alert))
+      onClose={[Function]}
+      severity="error"
+    >
+      ERROR
+    </WithStyles(ForwardRef(Alert))>
+  </WithStyles(ForwardRef(Snackbar))>
+  <ServerActionBackdrop />
+</o>
+`;
+
+exports[`ScopesManagement with no Snackbar renders correctly 1`] = `
+<o
+  bottombar={
+    <p
+      backToTopLabel="Haut de page"
+    />
+  }
+  titlebar={
+    <withRouter(TitleBar)
+      actions={
+        Array [
+          Object {
+            "href": "/scopes/create",
+            "icon": Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "displayName": "AddIcon",
+              "muiName": "SvgIcon",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+            },
+            "id": "new_scope_button",
+            "label": "Créer une nouvelle gamme",
+            "size": "large",
+          },
+        ]
+      }
+      title="Gestion des gammes"
+    />
+  }
+>
+  <DataGrid
+    actions={
+      Array [
+        Object {
+          "color": "quaternary",
+          "disabled": true,
+          "icon": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "displayName": "DeleteIcon",
+            "muiName": "SvgIcon",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+          },
+          "label": "Supprimer les gammes sélectionnées",
+          "onClick": [Function],
+        },
+      ]
+    }
+    rowCount={0}
+    rows={Array []}
+  />
+  <DeleteScopesConfirmationModal
+    open={false}
+    toggle={[Function]}
+  />
+  <ServerActionBackdrop />
+</o>
+`;
+
+exports[`ScopesManagement with scopesDeleteSuccess renders correctly 1`] = `
+<o
+  bottombar={
+    <p
+      backToTopLabel="Haut de page"
+    />
+  }
+  titlebar={
+    <withRouter(TitleBar)
+      actions={
+        Array [
+          Object {
+            "href": "/scopes/create",
+            "icon": Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "displayName": "AddIcon",
+              "muiName": "SvgIcon",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+            },
+            "id": "new_scope_button",
+            "label": "Créer une nouvelle gamme",
+            "size": "large",
+          },
+        ]
+      }
+      title="Gestion des gammes"
+    />
+  }
+>
+  <DataGrid
+    actions={
+      Array [
+        Object {
+          "color": "quaternary",
+          "disabled": true,
+          "icon": Object {
+            "$$typeof": Symbol(react.memo),
+            "compare": null,
+            "displayName": "DeleteIcon",
+            "muiName": "SvgIcon",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "render": [Function],
+            },
+          },
+          "label": "Supprimer les gammes sélectionnées",
+          "onClick": [Function],
+        },
+      ]
+    }
+    rowCount={0}
+    rows={Array []}
+  />
+  <DeleteScopesConfirmationModal
+    open={false}
+    toggle={[Function]}
+  />
+  <WithStyles(ForwardRef(Snackbar))
+    autoHideDuration={6000}
+    onClose={[Function]}
+    open={true}
+  >
+    <WithStyles(ForwardRef(Alert))
+      onClose={[Function]}
+      severity="success"
+    >
+      La séléction a bien été supprimée
+    </WithStyles(ForwardRef(Alert))>
+  </WithStyles(ForwardRef(Snackbar))>
+  <ServerActionBackdrop />
+</o>
+`;

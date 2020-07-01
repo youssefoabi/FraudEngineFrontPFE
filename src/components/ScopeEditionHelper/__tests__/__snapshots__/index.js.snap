@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScopeEditionHelper ScopeEditionHelper renders correctly with scope 1`] = `
+<h
+  fullheight={false}
+  title="Aperçu de l'url"
+  xs={12}
+>
+  <WithStyles(ForwardRef(Typography))
+    className="makeStyles-linkTypography-3"
+  >
+    <WithStyles(ForwardRef(Link))
+      className="makeStyles-linkAnchor-4"
+      href="https://www..com/?query_param="
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      https://www..com/?query_param=
+    </WithStyles(ForwardRef(Link))>
+  </WithStyles(ForwardRef(Typography))>
+  <f
+    config={null}
+    fields={
+      Array [
+        Object {
+          "columns": 7,
+          "defaultValue": "",
+          "id": "{cdiscount_env}",
+          "label": "cdiscount_env",
+          "type": "input",
+        },
+        Object {
+          "columns": 7,
+          "defaultValue": "",
+          "id": "{path_var}",
+          "label": "path_var",
+          "type": "input",
+        },
+        Object {
+          "columns": 7,
+          "defaultValue": "",
+          "id": "{query_param=}",
+          "label": "query_param",
+          "type": "input",
+        },
+      ]
+    }
+    inputs={null}
+    onChange={[Function]}
+    onInit={[Function]}
+    title={null}
+    values={
+      Object {
+        "{cdiscount_env}": "",
+        "{path_var}": "",
+        "{query_param=}": "",
+      }
+    }
+  />
+</h>
+`;
+
+exports[`ScopeEditionHelper ScopeEditionHelper renders correctly without props 1`] = `
+<h
+  fullheight={false}
+  title="Aperçu de l'url"
+  xs={12}
+>
+  <WithStyles(ForwardRef(Typography))
+    className="makeStyles-linkTypography-1"
+  >
+    <WithStyles(ForwardRef(Link))
+      className="makeStyles-linkAnchor-2"
+      href=""
+      onClick={[Function]}
+      rel="noopener noreferrer"
+      target="_blank"
+    />
+  </WithStyles(ForwardRef(Typography))>
+  <f
+    config={null}
+    fields={Array []}
+    inputs={null}
+    onChange={[Function]}
+    onInit={[Function]}
+    title={null}
+    values={Object {}}
+  />
+</h>
+`;

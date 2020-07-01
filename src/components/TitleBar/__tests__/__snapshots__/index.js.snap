@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TitleBar TitleBar renders correctly with location.pathname and history.goBack 1`] = `
+<f
+  actions={Array []}
+  backButtonProps={
+    Object {
+      "onClick": [MockFunction],
+    }
+  }
+  dividerProps={
+    Object {
+      "color": "transparent",
+      "size": 3,
+    }
+  }
+  title={null}
+/>
+`;
+
+exports[`TitleBar TitleBar renders correctly without props 1`] = `
+<f
+  actions={Array []}
+  backButtonProps={
+    Object {
+      "icon": [Function],
+      "label": "Back",
+      "onClick": null,
+    }
+  }
+  dividerProps={
+    Object {
+      "color": "transparent",
+      "size": 3,
+    }
+  }
+  title={null}
+/>
+`;

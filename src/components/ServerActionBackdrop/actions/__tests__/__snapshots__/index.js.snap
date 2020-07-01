@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scopes actions PENDING_REQUEST 1`] = `"PENDING_REQUEST"`;
+
+exports[`Scopes actions RESET_PENDING_REQUEST 1`] = `"RESET_PENDING_REQUEST"`;

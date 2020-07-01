@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScopesCreation operations saga saveScope with failure 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": Object {
+        "args": Array [
+          Object {
+            "id": 1,
+            "modifiedAt": "2020-04-10T13:17:19.323Z",
+            "name": "scope 1",
+            "parameters": Array [
+              Object {
+                "key": "search",
+                "typeId": 0,
+              },
+              Object {
+                "key": "cp",
+                "typeId": 1,
+              },
+              Object {
+                "key": "commune",
+                "typeId": 3,
+              },
+            ],
+            "scopeName": "scope 1",
+            "urlTemplate": "baseUrlscope1.com",
+          },
+        ],
+        "context": null,
+        "fn": [Function],
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "RESET_PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "error": Object {
+            "errorMessage": "Erreur d'enregistrement de la gamme",
+          },
+          "type": "SAVE_CREATE_SCOPE_ERROR",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": true,
+  },
+]
+`;
+
+exports[`ScopesCreation operations saga saveScope with null scope 1`] = `
+Array [
+  Object {
+    "done": true,
+    "value": null,
+  },
+]
+`;
+
+exports[`ScopesCreation operations saga saveScope with success 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": Object {
+        "args": Array [
+          Object {
+            "id": 1,
+            "modifiedAt": "2020-04-10T13:17:19.323Z",
+            "name": "scope 1",
+            "parameters": Array [
+              Object {
+                "key": "search",
+                "typeId": 0,
+              },
+              Object {
+                "key": "cp",
+                "typeId": 1,
+              },
+              Object {
+                "key": "commune",
+                "typeId": 3,
+              },
+            ],
+            "scopeName": "scope 1",
+            "urlTemplate": "baseUrlscope1.com",
+          },
+        ],
+        "context": null,
+        "fn": [Function],
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "RESET_PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "SAVE_CREATE_SCOPE_SUCCESS",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": true,
+  },
+]
+`;

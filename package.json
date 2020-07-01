@@ -1,0 +1,161 @@
+{
+  "author": "Cdiscount",
+  "browserslist": {
+    "development": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all",
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ]
+  },
+  "dependencies": {
+    "@cdiscount/backoffice-app-components": "^1.6.0",
+    "@cdiscount/backoffice-ui": "^18.5.1",
+    "@cdiscount/http-client": "^6.1.1",
+    "@cdiscount/ramda-utils": "^2.0.1",
+    "@cdiscount/redux-entities-utils": "^1.1.0",
+    "@cdiscount/ui-colors": "^4.1.0",
+    "@cdiscount/ui-fonts": "^1.1.2",
+    "@cdiscount/ui-icons": "^6.9.2",
+    "@date-io/core": "^1.3.11",
+    "@date-io/date-fns": "^1.3.11",
+    "@material-ui/core": "4.9.11",
+    "@material-ui/icons": "4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.50",
+    "@material-ui/pickers": "^3.2.6",
+    "@material-ui/styles": "4.5.0",
+    "clsx": "^1.1.1",
+    "date-fns": "2.1.0",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.25.0",
+    "ramda-adjunct": "^2.24.0",
+    "react": "^16.8.6",
+    "react-app-polyfill": "^1.0.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-dom": "^16.8.6",
+    "react-global-configuration": "^1.3.0",
+    "react-intl": "^2.9.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.0",
+    "react-router-prop-types": "^1.0.4",
+    "react-scripts": "3.0.1",
+    "react-select": "^3.0.8",
+    "redux": "^4.0.1",
+    "redux-saga": "^0.16.0",
+    "redux-starter-kit": "^0.5.1",
+    "use-react-router": "^1.0.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@cdiscount/eslint-config-cdiscount-react": "^6.0.0",
+    "@cdiscount/jest-utils": "3.1.0",
+    "@cdiscount/prettier-config": "^1.2.0",
+    "@pact-foundation/pact": "^8.2.4",
+    "@pact-foundation/pact-node": "^8.4.0",
+    "cross-env": "^6.0.3",
+    "git-cz": "^3.0.1",
+    "husky": "^2.3.0",
+    "jest": "24.7.1",
+    "jest-junit": "^9.0.0",
+    "lint-staged": "^8.1.7",
+    "live-server": "^1.2.1",
+    "prettier": "^1.18.2",
+    "source-map-explorer": "^2.1.0",
+    "styled-components": "^5.0.0-beta.5",
+    "typescript": "^3.6.3"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-transform-runtime"
+    ],
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "@cdiscount/cdiscount-react"
+    ],
+    "root": true,
+    "rules": {
+      "jsx-a11y/anchor-is-valid": [
+        "error",
+        {
+          "components": [
+            "Link"
+          ],
+          "specialLink": [
+            "to"
+          ]
+        }
+      ]
+    }
+  },
+  "eslintIgnore": [
+    "build"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!**/__fixtures__/**",
+      "!**/__mocks__/**",
+      "!**/__stories__/**",
+      "!**/__tests__/**"
+    ],
+    "coverageReporters": [
+      "text",
+      "lcov",
+      "cobertura"
+    ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
+    "testPathIgnorePatterns": [
+      "scripts"
+    ]
+  },
+  "jest-junit": {
+    "outputName": "test-report.xml"
+  },
+  "license": "UNLICENSED",
+  "lint-staged": {
+    "*.{html,js,json,md}": [
+      "npm run format",
+      "git add"
+    ]
+  },
+  "name": "search-engine-editor-backoffice",
+  "prettier": "@cdiscount/prettier-config",
+  "private": true,
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "build": "react-scripts build",
+    "commit": "git-cz",
+    "format": "prettier --write '**/*.{html,js,json,md}' '!**/coverage/**' '!**/build/**' '!**/dist/**'",
+    "lint": "eslint --cache .",
+    "prestart": "cross-env ./scripts/create-default-config",
+    "start": "react-scripts start",
+    "storybook:test": "echo \"Error: No Storybook installed.\" && exit 0",
+    "test": "node scripts/test",
+    "test:pact_publish": "node scripts/publish-pact-report.js"
+  },
+  "version": "0.2.0"
+}

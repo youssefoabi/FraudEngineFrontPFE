@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DraggableList DraggableList defaultProp functions runs defaultProps.keyExtractor() 1`] = `undefined`;
+
+exports[`DraggableList DraggableList defaultProp functions runs defaultProps.onOrderChange() 1`] = `undefined`;
+
+exports[`DraggableList DraggableList defaultProp functions runs defaultProps.renderItem() 1`] = `undefined`;
+
+exports[`DraggableList DraggableList renders correctly without props 1`] = `""`;
+
+exports[`DraggableList DraggableList renders correctly with props 1`] = `
+<WithStyles(ForwardRef(Grid))
+  container={true}
+  direction="row"
+  item={true}
+>
+  <DragDropContext
+    onDragEnd={[Function]}
+  >
+    <Connect(Droppable)
+      direction="horizontal"
+      droppableId={null}
+      getContainerForClone={[Function]}
+      ignoreContainerClipping={false}
+      isCombineEnabled={false}
+      isDropDisabled={false}
+      mode="standard"
+      renderClone={null}
+      type="DEFAULT"
+    >
+      <Component />
+    </Connect(Droppable)>
+  </DragDropContext>
+</WithStyles(ForwardRef(Grid))>
+`;

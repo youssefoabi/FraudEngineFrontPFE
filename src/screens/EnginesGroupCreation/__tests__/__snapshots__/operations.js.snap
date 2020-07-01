@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EnginesGroupCreation operations saga createEnginesGroup with failure 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": Object {
+        "args": Array [
+          Object {
+            "engines": Array [
+              Object {
+                "engineId": 1,
+                "engineLabel": "engineLabel",
+                "engineName": "engine 1",
+                "isEnable": true,
+                "order": 1,
+                "pictogramUrl": "pictogramUrl",
+              },
+              Object {
+                "engineId": 2,
+                "engineLabel": "engineLabel 2",
+                "engineName": "engine 2",
+                "isEnable": false,
+                "order": 0,
+                "pictogramUrl": "pictogramUrl 2",
+              },
+            ],
+            "groupCode": 2,
+            "groupId": 1,
+            "groupName": "groupName",
+            "isEnable": true,
+          },
+        ],
+        "context": null,
+        "fn": [Function],
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "RESET_PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "error": Object {
+            "errorMessage": "Erreur d'enregistrement du groupe de moteurs",
+          },
+          "type": "CREATE_ENGINESGROUP_ERROR",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": true,
+  },
+]
+`;
+
+exports[`EnginesGroupCreation operations saga createEnginesGroup with null enginesGroup 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": null,
+  },
+]
+`;
+
+exports[`EnginesGroupCreation operations saga createEnginesGroup with success 1`] = `
+Array [
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "CALL": Object {
+        "args": Array [
+          Object {
+            "engines": Array [
+              Object {
+                "engineId": 1,
+                "engineLabel": "engineLabel",
+                "engineName": "engine 1",
+                "isEnable": true,
+                "order": 1,
+                "pictogramUrl": "pictogramUrl",
+              },
+              Object {
+                "engineId": 2,
+                "engineLabel": "engineLabel 2",
+                "engineName": "engine 2",
+                "isEnable": false,
+                "order": 0,
+                "pictogramUrl": "pictogramUrl 2",
+              },
+            ],
+            "groupCode": 2,
+            "groupId": 1,
+            "groupName": "groupName",
+            "isEnable": true,
+          },
+        ],
+        "context": null,
+        "fn": [Function],
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "RESET_PENDING_REQUEST",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": false,
+    "value": Object {
+      "@@redux-saga/IO": true,
+      "PUT": Object {
+        "action": Object {
+          "type": "CREATE_ENGINESGROUP_SUCCESS",
+        },
+        "channel": null,
+      },
+    },
+  },
+  Object {
+    "done": true,
+    "value": true,
+  },
+]
+`;

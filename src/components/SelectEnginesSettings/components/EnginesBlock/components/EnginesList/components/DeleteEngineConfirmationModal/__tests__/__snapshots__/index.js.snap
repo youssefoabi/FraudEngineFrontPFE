@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteEngineConfirmationModal DeleteEngineConfirmationModal defaultProp functions runs defaultProps.confirm() 1`] = `undefined`;
+
+exports[`DeleteEngineConfirmationModal DeleteEngineConfirmationModal defaultProp functions runs defaultProps.toggle() 1`] = `undefined`;
+
+exports[`DeleteEngineConfirmationModal DeleteEngineConfirmationModal renders correctly with engines 1`] = `
+<ConfirmationModal
+  confirm={[MockFunction]}
+  isOpen={true}
+  title="Suppression du moteur"
+  toggle={[MockFunction]}
+>
+  <WithStyles(ForwardRef(Typography))>
+    Confirmez-vous la suppression du moteur  engine ?
+  </WithStyles(ForwardRef(Typography))>
+</ConfirmationModal>
+`;
+
+exports[`DeleteEngineConfirmationModal DeleteEngineConfirmationModal renders correctly without props 1`] = `""`;

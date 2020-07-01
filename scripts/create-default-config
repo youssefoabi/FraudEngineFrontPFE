@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+const fs = require('fs');
+
+const configFile = 'public/config.json';
+
+if (!fs.existsSync(configFile)) {
+  // eslint-disable-next-line no-console
+  fs.writeFile(configFile, '{}', () => console.log('Default config file created.'));
+}

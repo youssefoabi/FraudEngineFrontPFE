@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmationModal renders correctly 1`] = `
+<y
+  actions={
+    Array [
+      Object {
+        "color": "default",
+        "label": "Non, Annuler",
+        "onClick": [Function],
+        "size": "large",
+        "variant": "contained",
+      },
+      Object {
+        "color": "quaternary",
+        "label": "Oui, Supprimer",
+        "onClick": [Function],
+        "size": "large",
+        "variant": "contained",
+      },
+    ]
+  }
+  container={null}
+  dialogProps={null}
+  fullScreen={false}
+  isOpen={false}
+  toggle={[Function]}
+/>
+`;

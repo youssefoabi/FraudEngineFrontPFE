@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`styles returns correct result 1`] = `
+Object {
+  "inlineText": Object {
+    "fontSize": "inherit",
+    "whiteSpace": "nowrap",
+  },
+  "scopesText": Object {
+    "fontSize": "inherit",
+  },
+  "scopesWrapper": Object {
+    "width": 600,
+  },
+}
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServerActionBackdrop renders correctly 1`] = `
+<WithStyles(ForwardRef(Backdrop))
+  className="makeStyles-backdrop-1"
+  open={Object {}}
+>
+  <WithStyles(ForwardRef(CircularProgress)) />
+</WithStyles(ForwardRef(Backdrop))>
+`;

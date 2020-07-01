@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FieldsBlock FieldsBlock renders correctly with fieldId equal 1 1`] = `
+<h
+  fullheight={false}
+  title="Champ de saisie 2"
+>
+  <WithStyles(ForwardRef(Grid))
+    item={true}
+    lg={12}
+    md={12}
+    xs={12}
+  >
+    <f
+      config={null}
+      fields={
+        Array [
+          Object {
+            "columns": 6,
+            "defaultValue": false,
+            "id": "isEnable",
+            "label": "Actif",
+            "type": "switch",
+          },
+          Object {
+            "columns": 6,
+            "defaultValue": false,
+            "id": "isMandatory",
+            "label": "Champ obligatoire",
+            "type": "switch",
+          },
+        ]
+      }
+      inputs={null}
+      onChange={[Function]}
+      onInit={[Function]}
+      title={null}
+      values={null}
+    />
+    <f
+      config={null}
+      fields={
+        Array [
+          Object {
+            "columns": 6,
+            "id": "type",
+            "label": "Type",
+            "selectProps": Object {
+              "options": Array [
+                Object {
+                  "fieldTypeId": 1,
+                  "label": "Autocomplétion d'adresse",
+                  "value": "Address",
+                },
+                Object {
+                  "fieldTypeId": 3,
+                  "label": "Numérique",
+                  "value": "Numeric",
+                },
+                Object {
+                  "fieldTypeId": 2,
+                  "label": "Texte libre",
+                  "value": "Alphanumeric",
+                },
+              ],
+            },
+            "type": "select",
+          },
+        ]
+      }
+      inputs={null}
+      onChange={[Function]}
+      onInit={[Function]}
+      title={null}
+      values={null}
+    />
+    <br />
+    <f
+      config={null}
+      fields={
+        Array [
+          Object {
+            "columns": 6,
+            "id": "label",
+            "label": "Placeholder",
+            "type": "input",
+          },
+        ]
+      }
+      inputs={null}
+      onChange={[Function]}
+      onInit={[Function]}
+      title={null}
+      values={null}
+    />
+  </WithStyles(ForwardRef(Grid))>
+</h>
+`;
+
+exports[`FieldsBlock FieldsBlock renders correctly with fieldId null 1`] = `""`;
+
+exports[`FieldsBlock FieldsBlock renders correctly without props 1`] = `""`;

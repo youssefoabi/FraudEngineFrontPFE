@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScopesBlock renders correctly 1`] = `
+<Fragment>
+  <h
+    fullheight={false}
+    title="Choix des gammes"
+  >
+    <WithStyles(ForwardRef(Grid))
+      container={true}
+      spacing={3}
+    >
+      <WithStyles(ForwardRef(Grid))
+        item={true}
+        lg={4}
+        md={4}
+        xs={6}
+      >
+        <f
+          config={null}
+          fields={
+            Array [
+              Object {
+                "id": "selectedScope",
+                "label": "Gamme 1",
+                "selectProps": Object {
+                  "options": Object {},
+                },
+                "type": "select",
+              },
+            ]
+          }
+          inputs={null}
+          onChange={[Function]}
+          onInit={[Function]}
+          title={null}
+          values={null}
+        />
+      </WithStyles(ForwardRef(Grid))>
+      <h
+        fullheight={false}
+        lg={3}
+        md={3}
+        title={null}
+        xs={6}
+      >
+        <y
+          className="makeStyles-ButtonWrapper-1"
+          color="tertiary"
+          icon={
+            Object {
+              "$$typeof": Symbol(react.memo),
+              "compare": null,
+              "displayName": "AddIcon",
+              "muiName": "SvgIcon",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "render": [Function],
+              },
+            }
+          }
+          label="AJOUTER UNE GAMME"
+          onClick={[Function]}
+          size="large"
+          variant="contained"
+        />
+      </h>
+    </WithStyles(ForwardRef(Grid))>
+    <ScopesList
+      engine={null}
+    />
+  </h>
+</Fragment>
+`;

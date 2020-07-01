@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse engine returns correct result 1`] = `
+Object {
+  "backgroundImages": Object {
+    "0": Object {
+      "alt": "alternative text",
+      "isEnable": true,
+      "openInNewTab": true,
+      "order": 0,
+      "urlImageDesktop": "https://www.leparisien.fr/resizer/CBn4GjacGJ5llevItKUbQYa6zcw=/932x582/arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/4U4PGCRHAK2F6HLMZCBI4PSDNU.jpg",
+      "urlImageMobile": "https://www.leparisien.fr/resizer/CBn4GjacGJ5llevItKUbQYa6zcw=/932x582/arc-anglerfish-eu-central-1-prod-leparisien.s3.amazonaws.com/public/4U4PGCRHAK2F6HLMZCBI4PSDNU.jpg",
+      "urlLinkDesktop": "Lien PC",
+      "urlLinkMobile": "Lien Mobile",
+    },
+  },
+  "createdAt": "2020-05-13T15:39:07.932Z",
+  "engineId": 1,
+  "firstFieldId": 0,
+  "id": 0,
+  "inputFields": Object {
+    "0": Object {
+      "id": 0,
+      "isEnable": true,
+      "isMandatory": true,
+      "label": "Placeholder Field 1",
+      "order": 0,
+      "parameters": Array [
+        Object {
+          "externalCodeId": 4,
+          "id": 4,
+          "key": "Latitude",
+          "scopeId": 2,
+        },
+      ],
+      "type": Object {
+        "fieldTypeId": 1,
+        "label": "Autocomplétion d'adresse",
+        "value": "Address",
+      },
+    },
+    "1": Object {
+      "id": 1,
+      "isEnable": true,
+      "isMandatory": true,
+      "label": "Placeholder Field 2",
+      "order": 0,
+      "parameters": Array [
+        Object {
+          "externalCodeId": 2,
+          "id": 0,
+          "key": "cp",
+          "scopeId": 1,
+        },
+        Object {
+          "externalCodeId": 4,
+          "id": 1,
+          "key": "commune",
+          "scopeId": 1,
+        },
+        Object {
+          "externalCodeId": 1,
+          "id": 3,
+          "key": "search",
+          "scopeId": 2,
+        },
+      ],
+      "type": Object {
+        "fieldTypeId": 1,
+        "label": "Autocomplétion d'adresse",
+        "value": "Address",
+      },
+    },
+  },
+  "isEnable": true,
+  "isMarketingTextEnable": true,
+  "marketingText": "marketingText",
+  "modifiedAt": 1589384347932,
+  "name": "name",
+  "scopes": Object {
+    "1": Object {
+      "isEnable": true,
+      "name": "gamme active avec un param n'est pas lie...",
+      "order": 0,
+      "scopeId": 1,
+    },
+    "2": Object {
+      "isEnable": true,
+      "name": "gamme active valide",
+      "order": 0,
+      "scopeId": 2,
+    },
+    "3": Object {
+      "isEnable": false,
+      "name": "gamme disactive",
+      "order": 0,
+      "scopeId": 3,
+    },
+  },
+  "searchText": "searchText",
+  "secondFieldId": 1,
+}
+`;
+
+exports[`parse null returns correct result 1`] = `null`;
