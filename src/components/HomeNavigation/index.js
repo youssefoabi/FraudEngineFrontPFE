@@ -40,6 +40,20 @@ function HomeNavigation() {
       >
         <Typography style={{ fontSize: 15 }}>Référentiel des gammes</Typography>
       </Button>
+      <Button
+        className={classes.homeNavigationButton}
+        href="/rules"
+        startIcon={<BallotIcon style={{ fontSize: 60 }} />}
+      >
+        <Typography style={{ fontSize: 15 }}>Gestion des règles</Typography>
+      </Button>
+      <Button
+        className={classes.homeNavigationButton}
+        href="/criteria"
+        startIcon={<AppsIcon style={{ fontSize: 60 }} />}
+      >
+        <Typography style={{ fontSize: 15 }}>Gestion des critères</Typography>
+      </Button>
     </Grid>
   );
 }
