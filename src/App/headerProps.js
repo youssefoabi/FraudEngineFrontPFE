@@ -22,6 +22,14 @@ export default {
                 label: 'Référentiel des gammes',
                 path: '/scopes',
               },
+              {
+                label: 'Gestion des règles',
+                path: '/rules',
+              },
+              {
+                label: 'Référentiel des critères',
+                path: '/criteria',
+              },
             ],
           },
         ],

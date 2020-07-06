@@ -3,6 +3,8 @@ import config from 'react-global-configuration';
 import httpClient from '@cdiscount/http-client';
 
 import enginesGroupMock from '../screens/EnginesGroupEdition/__fixtures__';
+// import ruleMock from '../screens/RuleEdition/__fixtures__';
+import rules from '../screens/RulesManagement/__fixtures__';
 
 export default function clientApi() {
   const client = httpClient({
@@ -39,6 +41,37 @@ export default function clientApi() {
             enginesGroup.groupName === 'error'
               ? reject(new Error('update enginesGroup error'))
               : resolve({ messgae: 'update enginesGroup success' }),
+          3000,
+        ),
+      ),
+
+    createRule: rule =>
+      new Promise((resolve, reject) =>
+        setTimeout(
+          () =>
+            rule.name === 'error'
+              ? reject(new Error('create rule error'))
+              : resolve({ messgae: 'create rule success' }),
+          3000,
+        ),
+      ),
+    // fetchRule: id => new Promise(resolve => setTimeout(() => resolve({ data: ruleMock, id }), 3000)),
+    updateRule: rule =>
+      new Promise((resolve, reject) =>
+        setTimeout(
+          () =>
+            rule.name === 'error'
+              ? reject(new Error('update rule error'))
+              : resolve({ messgae: 'update rule success' }),
+          3000,
+        ),
+      ),
+    getRules: () => new Promise(resolve => resolve({ data: rules })),
+    deleteRule: id =>
+      new Promise((resolve, reject) =>
+        setTimeout(
+          () =>
+            id % 2 === 0 ? reject(new Error('delete rule error')) : resolve({ messgae: 'rule deleted' }),
           3000,
         ),
       ),

@@ -4,6 +4,9 @@ import EnginesGroupCreation from '../screens/EnginesGroupCreation';
 import EnginesGroupEdition from '../screens/EnginesGroupEdition';
 import EnginesManagement from '../screens/EnginesManagement';
 import Home from '../screens/Home';
+// import RuleCreation from '../screens/RuleCreation';
+// import RuleEdition from '../screens/RuleEdition';
+import RulesManagement from '../screens/RulesManagement';
 import ScopeCreation from '../screens/ScopeCreation';
 import ScopeEdition from '../screens/ScopeEdition';
 import ScopesManagement from '../screens/ScopesManagement';
@@ -62,5 +65,23 @@ export default [
     path: '/engines-groups/edit/:id',
     component: EnginesGroupEdition,
     name: "Edition d'un groupe de moteurs",
+  },
+  // {
+  //   exact: true,
+  //   path: '/rules/create',
+  //   component: RuleCreation,
+  //   name: "Création d'une règle",
+  // },
+  // {
+  //   exact: true,
+  //   path: '/rules/edit/:id',
+  //   component: RuleEdition,
+  //   name: "Edition d'une règle",
+  // },
+  {
+    exact: true,
+    path: '/rules',
+    component: RulesManagement,
+    name: 'Gestion des règles',
   },
 ];
