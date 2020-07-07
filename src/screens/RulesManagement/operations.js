@@ -70,7 +70,7 @@ export function* deleteRules() {
         yield put({
           type: DELETE_RULES_ERROR,
           error: {
-            errorMessage: `Echec de suppression d${hasMoreThanOneError ? 'es' : 'u'}  moteur${
+            errorMessage: `Echec de suppression d${hasMoreThanOneError ? 'es' : 'e la'}  règle${
               hasMoreThanOneError ? 's' : ''
             } ${join(',', errors)}`,
           },

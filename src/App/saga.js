@@ -11,6 +11,9 @@ import rulesManagementOperations from '../screens/RulesManagement/operations';
 import scopeCreationOperations from '../screens/ScopeCreation/operations';
 import scopeEditionOperations from '../screens/ScopeEdition/operations';
 import scopesManagementOperations from '../screens/ScopesManagement/operations';
+// import criterionCreationOperations from '../screens/CriterionCreation/operations';
+// import criterionEditionOperations from '../screens/CriterionEdition/operations';
+import criteriaManagementOperations from '../screens/CriteriaManagement/operations';
 
 export default function* watchAll() {
   yield all([...scopeCreationOperations]);
@@ -24,4 +27,7 @@ export default function* watchAll() {
   // yield all([...ruleCreationOperations]);
   // yield all([...ruleEditionOperations]);
   yield all([...rulesManagementOperations]);
+  // yield all([...criterionCreationOperations]);
+  // yield all([...criterionEditionOperations]);
+  yield all([...criteriaManagementOperations]);
 }

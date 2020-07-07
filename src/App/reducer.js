@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
 
+import { criteriaEntities, criteriaNavigation } from '../components/CriteriaDataGrid/reducers';
 import { enginesEntities, enginesNavigation } from '../components/EnginesDataGrid/reducers';
+// import { navigationCriterionError, navigationCriterionSuccess } from '../components/CriterionForm/reducers';
 import { navigationEngineError, navigationEngineSuccess } from '../components/EngineForm/reducers';
 import {
   navigationEnginesGroupError,
@@ -17,6 +19,7 @@ const rootReducer = combineReducers({
     scopes: scopesEntities,
     engines: enginesEntities,
     rules: rulesEntities,
+    criteria: criteriaEntities,
   }),
   navigation: combineReducers({
     scopes: scopesNavigation,
@@ -31,6 +34,9 @@ const rootReducer = combineReducers({
     rules: rulesNavigation,
     // ruleFormError: navigationRuleError,
     // ruleFormSuccess: navigationRuleSuccess,
+    criteria: criteriaNavigation,
+    // criterionFormError: navigationCriterionError,
+    // criterionFormSuccess: navigationCriterionSuccess,
   }),
 });
 
