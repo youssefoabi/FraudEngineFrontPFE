@@ -6,13 +6,13 @@ import EnginesManagement from '../screens/EnginesManagement';
 import Home from '../screens/Home';
 // import RuleCreation from '../screens/RuleCreation';
 // import RuleEdition from '../screens/RuleEdition';
+import CriteriaManagement from '../screens/CriteriaManagement';
+import CriterionCreation from '../screens/CriterionCreation';
+import CriterionEdition from '../screens/CriterionEdition';
 import RulesManagement from '../screens/RulesManagement';
 import ScopeCreation from '../screens/ScopeCreation';
 import ScopeEdition from '../screens/ScopeEdition';
 import ScopesManagement from '../screens/ScopesManagement';
-// import CriterionCreation from '../screens/CriterionCreation';
-// import CriterionEdition from '../screens/CriterionEdition';
-import CriteriaManagement from '../screens/CriteriaManagement';
 
 export default [
   {
@@ -88,18 +88,18 @@ export default [
     name: 'Gestion des règles',
   },
 
-  // {
-  //   exact: true,
-  //   path: '/criteria/create',
-  //   component: CriterionCreation,
-  //   name: "Création d'un critère",
-  // },
-  // {
-  //   exact: true,
-  //   path: '/criteria/edit/:id',
-  //   component: CriterionEdition,
-  //   name: "Edition d'un critère",
-  // },
+  {
+    exact: true,
+    path: '/criteria/create',
+    component: CriterionCreation,
+    name: "Création d'un critère",
+  },
+  {
+    exact: true,
+    path: '/criteria/edit/:id',
+    component: CriterionEdition,
+    name: "Edition d'un critère",
+  },
   {
     exact: true,
     path: '/criteria',

@@ -2,7 +2,7 @@ import { combineReducers } from 'redux';
 
 import { criteriaEntities, criteriaNavigation } from '../components/CriteriaDataGrid/reducers';
 import { enginesEntities, enginesNavigation } from '../components/EnginesDataGrid/reducers';
-// import { navigationCriterionError, navigationCriterionSuccess } from '../components/CriterionForm/reducers';
+import { navigationCriterionError, navigationCriterionSuccess } from '../components/CriterionForm/reducers';
 import { navigationEngineError, navigationEngineSuccess } from '../components/EngineForm/reducers';
 import {
   navigationEnginesGroupError,
@@ -35,8 +35,8 @@ const rootReducer = combineReducers({
     // ruleFormError: navigationRuleError,
     // ruleFormSuccess: navigationRuleSuccess,
     criteria: criteriaNavigation,
-    // criterionFormError: navigationCriterionError,
-    // criterionFormSuccess: navigationCriterionSuccess,
+    criterionFormError: navigationCriterionError,
+    criterionFormSuccess: navigationCriterionSuccess,
   }),
 });
 

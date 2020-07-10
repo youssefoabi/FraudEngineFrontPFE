@@ -3,7 +3,7 @@ import config from 'react-global-configuration';
 import httpClient from '@cdiscount/http-client';
 
 import criteria from '../screens/CriteriaManagement/__fixtures__';
-// import criterionMock from '../screens/CriterionEdition/__fixtures__';
+import criterionMock from '../screens/CriterionEdition/__fixtures__';
 import enginesGroupMock from '../screens/EnginesGroupEdition/__fixtures__';
 import ruleMock from '../screens/RuleEdition/__fixtures__';
 import rules from '../screens/RulesManagement/__fixtures__';
@@ -78,22 +78,23 @@ export default function clientApi() {
         ),
       ),
 
-    createCriterion: rule =>
+    createCriterion: criterion =>
       new Promise((resolve, reject) =>
         setTimeout(
           () =>
-            rule.name === 'error'
+            criterion.explanation === 'error'
               ? reject(new Error('create criterion error'))
               : resolve({ messgae: 'create criterion success' }),
           3000,
         ),
       ),
-    // fetchCriterion: id => new Promise(resolve => setTimeout(() => resolve({ data: criterionMock, id }), 3000)),
-    updateCriterion: rule =>
+    fetchCriterion: id =>
+      new Promise(resolve => setTimeout(() => resolve({ data: criterionMock, id }), 3000)),
+    updateCriterion: criterion =>
       new Promise((resolve, reject) =>
         setTimeout(
           () =>
-            rule.name === 'error'
+            criterion.explanation === 'error'
               ? reject(new Error('update criterion error'))
               : resolve({ messgae: 'update criterion success' }),
           3000,

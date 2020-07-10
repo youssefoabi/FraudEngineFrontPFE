@@ -4,10 +4,10 @@ export default function style() {
       fontSize: 'inherit',
       whiteSpace: 'nowrap',
     },
-    criteriaWrapper: {
-      width: 600,
+    eligibleOperatorsWrapper: {
+      width: 350,
     },
-    criteriaText: {
+    eligibleOperatorsText: {
       fontSize: 'inherit',
     },
   };

@@ -59,7 +59,7 @@ function CriteriaManagement() {
     <Screen
       titlebar={
         <TitleBar
-          title="GESTION DES CRITvRES"
+          title="GESTION DES CRITÈRES"
           actions={[
             {
               id: 'new_criterion_button',

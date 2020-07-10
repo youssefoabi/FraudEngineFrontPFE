@@ -1,5 +1,5 @@
 import { append, pluck, uniq, without } from 'ramda';
-import { arrayOf, bool, elementType, func, number, shape, string } from 'prop-types';
+import { arrayOf, elementType, func, number, shape, string } from 'prop-types';
 import { DataGrid as BuiDataGrid } from '@cdiscount/backoffice-ui';
 import EditIcon from '@material-ui/icons/Edit';
 import React from 'react';
@@ -108,10 +108,10 @@ DataGrid.propTypes = {
   rowCount: number,
   rows: arrayOf(
     shape({
-      scopes: string,
-      productId: string,
-      activationDate: string,
-      isEnable: bool,
+      id: string,
+      code: string,
+      explanation: string,
+      eligibleOperators: string,
     }),
   ),
 };

@@ -48,6 +48,9 @@ export default function sortBy(order, orderBy) {
     case 'isActivated':
     case 'priority':
     case 'nbPendingOrders':
+    case 'eligibleOperators':
+    case 'code':
+    case 'explanation':
       return sort(alphanumericComparator(order, [orderBy]));
     default:
       return sortWith([dateComparator('desc', 'modifiedAt')]);
