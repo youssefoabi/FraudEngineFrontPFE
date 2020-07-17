@@ -38,11 +38,9 @@ export default function sortBy(order, orderBy) {
   switch (orderBy) {
     case 'modifiedAt':
       return sortWith([dateComparator(order, 'modifiedAt')]);
-    case 'urlTemplate':
     case 'name':
     case 'isEnable':
     case 'id':
-    case 'scopes':
     case 'description':
     case 'isValidated':
     case 'isActivated':

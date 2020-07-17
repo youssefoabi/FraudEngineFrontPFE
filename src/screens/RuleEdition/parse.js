@@ -1,7 +1,5 @@
-import { addIndex, find, fromPairs, isNil, map, pathOr, pipe, prop } from 'ramda';
+import { isNil, map, pathOr } from 'ramda';
 import { isNilOrEmpty } from 'ramda-adjunct';
-
-import { typesOptions } from '../../components/SearchCriteriaSettings/components/FieldsBlock/config';
 
 const toTimestamp = date => (date ? Number(new Date(date)) : null);
 
@@ -10,71 +8,48 @@ const parseRule = rule => {
 
   const {
     id,
-    code,
     name,
-    isEnable,
-    scopes,
-    inputFields,
-    backgroundImages,
-    marketingText,
-    searchText,
+    description,
+    isValidated,
+    isActivated,
+    priority,
+    validatedBy,
+    editedBy,
+    comment,
+    version,
+    editedAction,
+    criteriaValues,
+    simulations,
     createdAt,
     modifiedAt,
   } = rule;
 
-  const { text, isEnable: isMarketingTextEnable } = marketingText || {};
+  const mapCriteriaValues = allCriteriaValues => {
+    if (isNilOrEmpty(allCriteriaValues)) return null;
 
-  const mapScopes = allScopes => {
-    if (isNilOrEmpty(allScopes)) return null;
-
-    return pipe(
-      map(scope => [prop('scopeId', scope), scope]),
-      fromPairs,
-    )(allScopes);
+    return map(criteriaValue => {
+      const operator = pathOr(null, ['operator'], criteriaValue);
+      return { ...(criteriaValue || {}), operator: { label: operator, value: operator } };
+    }, allCriteriaValues);
   };
-
-  const mapInputFields = allInputFields => {
-    if (isNilOrEmpty(allInputFields)) return null;
-    const mapIndexed = addIndex(map);
-
-    return pipe(
-      map(inputField => {
-        const type = pathOr(null, ['type'], inputField);
-        return { ...(inputField || {}), type: find(option => type === prop('value', option), typesOptions) };
-      }),
-      mapIndexed((inputField, index) => [index, inputField]),
-      fromPairs,
-    )(allInputFields);
-  };
-
-  const mapBackgroundImages = allBackgroundImages => {
-    if (isNilOrEmpty(allBackgroundImages)) return null;
-
-    const mapIndexed = addIndex(map);
-    return pipe(
-      mapIndexed((backgroundImage, index) => [index, backgroundImage]),
-      fromPairs,
-    )(allBackgroundImages);
-  };
-
-  const firstFieldId = pathOr(null, ['0', 'id'], inputFields);
-  const secondFieldId = pathOr(null, ['1', 'id'], inputFields);
 
   return {
-    id: code,
-    ruleId: id,
+    id,
     name,
-    isEnable,
-    scopes: mapScopes(scopes),
-    inputFields: mapInputFields(inputFields),
-    backgroundImages: mapBackgroundImages(backgroundImages),
-    marketingText: text,
-    isMarketingTextEnable,
-    searchText,
+    description,
+    isValidated,
+    isActivated,
+    priority,
+    validatedBy,
+    editedBy,
+    comment,
+    version,
+    editedAction,
+    criteriaValues: mapCriteriaValues(criteriaValues),
+    simulations,
     createdAt,
+
     modifiedAt: toTimestamp(modifiedAt),
-    firstFieldId,
-    secondFieldId,
   };
 };
 export default parseRule;

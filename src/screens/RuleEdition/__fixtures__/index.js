@@ -10,14 +10,14 @@ export default {
   comment: 'comment',
   version: 1,
   editedAction: 'ADD',
-  criterionOperatorValues: [
+  criteriaValues: [
     {
-      criterion: 'Montant',
-      operator: 'Equal',
+      criterion: { label: 'Montant de la commande', value: 'OrderAmountCriterion' },
+      operator: 'GreaterThan',
       value: 20,
     },
     {
-      criterion: 'Pays',
+      criterion: { label: 'Pays de livraison', value: 'DelevryCountryCriterion' },
       operator: 'Equal',
       value: 'Morocco',
     },

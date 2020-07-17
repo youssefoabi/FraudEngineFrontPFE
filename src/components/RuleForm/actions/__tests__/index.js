@@ -2,6 +2,6 @@ import { itShouldTestActionCreators } from '@cdiscount/jest-utils';
 
 import * as actions from '../';
 
-describe('Actions', () => {
+describe('Rule Form actions', () => {
   itShouldTestActionCreators(actions);
 });
