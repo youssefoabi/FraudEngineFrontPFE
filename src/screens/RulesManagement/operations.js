@@ -44,10 +44,11 @@ export function* fetchRules() {
 }
 
 export function* deleteRule(id) {
+  const rule = yield select(path(['entities', 'rules', 'byId', id]));
+  const { name, id: code } = rule || {};
   try {
-    yield call(clientApi().deleteRule, id);
+    yield call(clientApi().deleteRule, code);
   } catch (error) {
-    const name = yield select(path(['entities', 'rules', 'byId', id, 'name']));
     return { isSuccess: false, name, id };
   }
 

@@ -21,16 +21,16 @@ function HomeNavigation() {
       <Button
         className={classes.homeNavigationButton}
         href="/rules"
-        startIcon={<BallotIcon style={{ fontSize: 60 }} />}
+        startIcon={<BallotIcon style={{ fontSize: 120 }} />}
       >
-        <Typography style={{ fontSize: 15 }}>Gestion des règles</Typography>
+        <Typography style={{ fontSize: 30 }}>Gestion des règles</Typography>
       </Button>
       <Button
         className={classes.homeNavigationButton}
         href="/criteria"
-        startIcon={<AppsIcon style={{ fontSize: 60 }} />}
+        startIcon={<AppsIcon style={{ fontSize: 120 }} />}
       >
-        <Typography style={{ fontSize: 15 }}>Gestion des critères</Typography>
+        <Typography style={{ fontSize: 30 }}>Gestion des critères</Typography>
       </Button>
     </Grid>
   );

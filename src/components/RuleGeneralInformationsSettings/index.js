@@ -11,7 +11,7 @@ import styles from './styles';
 
 const RuleGeneralInformationsSettings = ({ rule, handleChange, resetRule }) => {
   const classes = useStyles(styles);
-  console.log('ruleeee', rule);
+
   return (
     <GridItem title="Informations Générales">
       <Grid item xs={12} md={12} lg={12}>

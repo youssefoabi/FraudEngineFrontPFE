@@ -16,7 +16,7 @@ export default function DeleteRulesConfirmationModal({ open, toggle }) {
   const selected = useSelector(pathOr([], ['navigation', 'rules', 'selected']));
   const namesSelector = pipe(
     pathOr([], ['entities', 'rules', 'byId']),
-    pickBy((value, key) => contains(+key, selected)),
+    pickBy((value, key) => contains(key, selected)),
     values,
     pluck('name'),
     join(', '),
