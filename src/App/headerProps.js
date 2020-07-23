@@ -11,18 +11,6 @@ export default {
             label: 'PARAMETRAGE',
             entries: [
               {
-                label: 'Moteurs de recherche',
-                path: '/engines',
-              },
-              {
-                label: 'Groupe de moteurs de recherche',
-                path: '/engines-groups',
-              },
-              {
-                label: 'Référentiel des gammes',
-                path: '/scopes',
-              },
-              {
                 label: 'Gestion des règles',
                 path: '/rules',
               },

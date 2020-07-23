@@ -1,6 +1,6 @@
 import { itReturnsCorrectResult } from '@cdiscount/jest-utils';
 
-import engines from '../../../screens/EnginesManagement/__fixtures__';
+import rules from '../../../screens/RulesManagement/__fixtures__';
 import sortBy, { dateComparator } from '../';
 
 describe('sortBy', () => {
@@ -9,27 +9,19 @@ describe('sortBy', () => {
   });
 
   describe('sorts by name', () => {
-    itReturnsCorrectResult(sortBy('asc', 'name')(engines));
+    itReturnsCorrectResult(sortBy('asc', 'name')(rules));
   });
 
   describe('sorts by name desc', () => {
-    itReturnsCorrectResult(sortBy('desc', 'name')(engines));
-  });
-
-  describe('sorts by urlTemplate', () => {
-    itReturnsCorrectResult(sortBy('asc', 'urlTemplate')(engines));
-  });
-
-  describe('sorts by scopes', () => {
-    itReturnsCorrectResult(sortBy('dsc', 'scopes')(engines));
+    itReturnsCorrectResult(sortBy('desc', 'name')(rules));
   });
 
   describe('sorts by id', () => {
-    itReturnsCorrectResult(sortBy('asc', 'id')(engines));
+    itReturnsCorrectResult(sortBy('asc', 'id')(rules));
   });
 
   describe('sorts by modification date', () => {
-    itReturnsCorrectResult(sortBy('asc', 'modifiedAt')(engines));
+    itReturnsCorrectResult(sortBy('asc', 'modifiedAt')(rules));
   });
 });
 

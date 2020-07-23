@@ -15,7 +15,9 @@ export default function useColumns() {
   }
 
   function renderInlineDateCell(date) {
-    return date && <Typography className={classes.inlineText}>{format(date, 'dd/MM/yyyy HH:mm')}</Typography>;
+    return (
+      date && <Typography className={classes.inlineText}>{format(new Date(date), 'dd/MM/yyyy')}</Typography>
+    );
   }
   function renderActivatedCell(isEnabled) {
     return (
@@ -41,12 +43,6 @@ export default function useColumns() {
   }
 
   const columns = [
-    {
-      id: 'id',
-      label: 'ID',
-      render: renderInlineCell,
-      isSortable: true,
-    },
     {
       id: 'name',
       label: 'NOM',

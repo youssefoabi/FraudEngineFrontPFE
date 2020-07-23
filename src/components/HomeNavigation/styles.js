@@ -2,10 +2,10 @@ export default function style() {
   return {
     homeNavigationButton: {
       backgroundColor: '#F5F5F5',
-      fontSize: 200,
-      height: '150px',
+      fontSize: 400,
+      height: '300px',
       margin: 10,
-      width: '300px',
+      width: '600px',
       '&:hover': {
         backgroundColor: '#BABABA',
         // Reset on touch devices, it doesn't add specificity
@@ -13,7 +13,7 @@ export default function style() {
           backgroundColor: '#BABABA',
         },
         '*': {
-          fontSize: 200,
+          fontSize: 400,
         },
       },
     },

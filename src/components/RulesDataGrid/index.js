@@ -108,8 +108,6 @@ DataGrid.propTypes = {
   rowCount: number,
   rows: arrayOf(
     shape({
-      scopes: string,
-      productId: string,
       activationDate: string,
       isEnable: bool,
     }),

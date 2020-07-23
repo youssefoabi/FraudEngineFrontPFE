@@ -2,6 +2,6 @@ import { itShouldTestActionCreators } from '@cdiscount/jest-utils';
 
 import * as actions from '../';
 
-describe('Scopes actions', () => {
+describe('Actions', () => {
   itShouldTestActionCreators(actions);
 });

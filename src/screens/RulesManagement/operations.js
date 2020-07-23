@@ -44,10 +44,11 @@ export function* fetchRules() {
 }
 
 export function* deleteRule(id) {
+  const rule = yield select(path(['entities', 'rules', 'byId', id]));
+  const { name, id: code } = rule || {};
   try {
-    yield call(clientApi().deleteRule, id);
+    yield call(clientApi().deleteRule, code);
   } catch (error) {
-    const name = yield select(path(['entities', 'rules', 'byId', id, 'name']));
     return { isSuccess: false, name, id };
   }
 
@@ -70,7 +71,7 @@ export function* deleteRules() {
         yield put({
           type: DELETE_RULES_ERROR,
           error: {
-            errorMessage: `Echec de suppression d${hasMoreThanOneError ? 'es' : 'u'}  moteur${
+            errorMessage: `Echec de suppression d${hasMoreThanOneError ? 'es' : 'e la'}  règle${
               hasMoreThanOneError ? 's' : ''
             } ${join(',', errors)}`,
           },
