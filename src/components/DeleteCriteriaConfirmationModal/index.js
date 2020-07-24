@@ -16,9 +16,9 @@ export default function DeleteCriteriaConfirmationModal({ open, toggle }) {
   const selected = useSelector(pathOr([], ['navigation', 'criteria', 'selected']));
   const namesSelector = pipe(
     pathOr([], ['entities', 'criteria', 'byId']),
-    pickBy((value, key) => contains(+key, selected)),
+    pickBy((value, key) => contains(key, selected)),
     values,
-    pluck('code'),
+    pluck('explanation'),
     join(', '),
   );
   const names = useSelector(namesSelector);

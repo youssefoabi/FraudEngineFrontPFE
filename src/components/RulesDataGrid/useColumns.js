@@ -14,11 +14,16 @@ export default function useColumns() {
     return <Typography className={classes.inlineText}>{service}</Typography>;
   }
 
+  function renderRandomCell() {
+    return <Typography className={classes.inlineText}>{Math.floor(Math.random() * 10)}</Typography>;
+  }
+
   function renderInlineDateCell(date) {
     return (
       date && <Typography className={classes.inlineText}>{format(new Date(date), 'dd/MM/yyyy')}</Typography>
     );
   }
+
   function renderActivatedCell(isEnabled) {
     return (
       <Button
@@ -84,7 +89,7 @@ export default function useColumns() {
     {
       id: 'nbPendingOrders',
       label: 'Commandes en attente',
-      render: renderInlineCell,
+      render: renderRandomCell,
       isSortable: true,
     },
   ];

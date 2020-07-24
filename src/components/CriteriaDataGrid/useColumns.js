@@ -1,3 +1,4 @@
+import { format } from 'date-fns';
 import { isNilOrEmpty } from 'ramda-adjunct';
 import { join } from 'ramda';
 import { Typography } from '@material-ui/core';
@@ -19,6 +20,12 @@ export default function useColumns() {
     return <Typography className={classes.inlineText}>{service}</Typography>;
   }
 
+  function renderInlineDateCell(date) {
+    return (
+      date && <Typography className={classes.inlineText}>{format(new Date(date), 'dd/MM/yyyy')}</Typography>
+    );
+  }
+
   function renderEligibleOperators(eligibleOperators) {
     return (
       <div className={classes.eligibleOperatorsWrapper}>
@@ -30,12 +37,6 @@ export default function useColumns() {
   }
 
   const columns = [
-    {
-      id: 'id',
-      label: 'ID',
-      render: renderInlineCell,
-      isSortable: true,
-    },
     {
       id: 'explanation',
       label: 'Critère',
@@ -56,6 +57,12 @@ export default function useColumns() {
       render: renderEligibleOperators,
       isSortable: true,
       align: 'left',
+    },
+    {
+      id: 'modifiedAt',
+      label: 'Dernière modif.',
+      render: renderInlineDateCell,
+      isSortable: true,
     },
   ];
 
