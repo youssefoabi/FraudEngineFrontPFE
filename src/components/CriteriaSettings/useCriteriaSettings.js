@@ -1,20 +1,13 @@
-import { isEmpty, isNil, map, pathOr, prop } from 'ramda';
+import { isEmpty, isNil, map, pathOr } from 'ramda';
 import { isNilOrEmpty } from 'ramda-adjunct';
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo } from 'react';
 
-import clientApi from '../../client-api';
+import useCriteria from '../../screens/CriteriaManagement/useCriteria';
 
 export default function useCriteriaSettings({ rule }) {
-  const [allCriteria, setCriteria] = useState([]);
-
   const ruleCriteriaValues = pathOr([], ['criteriaValues'], rule);
 
-  clientApi()
-    .getCriteria()
-    .then(prop('data'))
-    .then(criteria => {
-      setCriteria(criteria);
-    });
+  const { criteria: allCriteria } = useCriteria();
 
   const mapCriterion = criterion => {
     if (isNilOrEmpty(criterion)) return null;
