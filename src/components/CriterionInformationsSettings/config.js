@@ -18,7 +18,6 @@ export const Config = [
     id: 'eligibleOperators',
     type: 'select',
     label: 'Les éligibles operateurs',
-    defaultValue: [{ label: 'Equal', value: 'Equal' }],
     selectProps: {
       isMulti: true,
       options: [
