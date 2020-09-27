@@ -8,7 +8,9 @@ export default function SaveRulesConfirmationModal({ confirm, open, toggle }) {
   return (
     <SaveConfirmationModal isOpen={open} title="Enregistrement de la règle" toggle={toggle} confirm={confirm}>
       <Typography>
-        {`La règle va mettre en attente ${Math.floor(Math.random() * 20)}% des commandes  `}
+        {`Nous estimons que cette règle arrêtera ${Math.floor(
+          Math.random() * 20,
+        )}% de flux de commandes (estimations sur les 7 derniers jours)`}
         <br />
         {`Confirmez-vous l'enregistrement de la règle `}
       </Typography>
